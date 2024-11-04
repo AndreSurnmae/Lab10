@@ -7,5 +7,5 @@ Lab 10 - Bootstrap
 5. Made a contact section with a button redirecting the user to contact.html where the contact form is
 6. Used bootstrap form components for contact form
 7. Made a simple footer with copyright information and social media logo links using boxicons.com
-0. CSS:
+8. CSS:
 Designed the website to be simple as possible. Alternating between light and dark colors respectively, mainly using a white and dark grey color codes, with a sprinkle of yellow color.
