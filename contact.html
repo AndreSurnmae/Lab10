@@ -15,19 +15,22 @@
     <title>Lab 10 - Bootstrap stuff</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">     <!-- class: navbar makes the navbar responsive | navbar-expand-lg expands the navbar at the large breakpoint then collapses on smaller screens | bg-body-tertiary makes the background color different -->
         <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+            <div class="container-fluid">     <!-- makes the container fit without any gap on sides like giving it a width of 100% -->
+              <a class="navbar-brand" href="index.html">    <!-- this doesn't work as it's supposed to be because I used an image from the internet so I had to style it myself-->
                 <img src="images/logo/logo_inUsed.png" alt="Logo" class="d-inline-block align-text-top">
                 <h1>Apart</h1>
               </a>
             </div>
           </nav>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- menu navbar for the nav-items when the screen gets smaller -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- nav links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- this div is hidden until the screen collapses and will be shown when the screen becomes smaller -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
@@ -41,11 +44,12 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Contact</a>
               </li>
+               <!-- makes this link have a dropdown menu for About-->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu"> <!-- shows when the nav-item dropdown is clicked -->
                   <li><a class="dropdown-item" href="#">History</a></li>
                   <li><a class="dropdown-item" href="#">What We Provide</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -53,13 +57,14 @@
                 </ul>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search"> <!-- adds a search bar with an input field and button that is flexible(as the screen becomes smaller, so does the search bar and button) -->
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
+      <!-- contact section with form -->
       <div class="contact-page container-fluid">
         <h1>Contact Form</h1>
         <form>
@@ -78,26 +83,26 @@
           <button type="submit" class="btn btn-primary">Submit</button>
           </form>
           </div>
+          <!-- footer -->
           <footer>
             <div class="footer-content container-fluid">
                 <p>&copy; 2024 Apart Construction. All rights reserved.</p>
             </div>
             <div class="social-media-icons">
-                <a href="https://www.facebook.com/apartconstruction" target="_blank">
+                <a href="https://www.facebook.com" target="_blank">
                   <i class="bx bxl-facebook"></i>
                 </a>
-                <a href="https://www.twitter.com/apartconstruction" target="_blank">
+                <a href="https://www.twitter.com" target="_blank">
                   <i class="bx bxl-twitter"></i>
                 </a>
-                <a href="https://www.instagram.com/apartconstruction" target="_blank">
+                <a href="https://www.instagram.com" target="_blank">
                   <i class="bx bxl-instagram"></i>
                 </a>
-                <a href="https://www.linkedin.com/company/apartconstruction" target="_blank">
+                <a href="https://www.linkedin.com/company" target="_blank">
                   <i class="bx bxl-linkedin-square"></i>
                 </a>
             </div>
-        </footer>        
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+        </footer>       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
   </body>
 </html>
